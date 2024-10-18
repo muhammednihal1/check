@@ -2,17 +2,27 @@
   <head>
     <title>Form</title>
   </head>
-  <body bgcolor="LightSkyBlue">
+  <body bgcolor="LightCyan">
+    <h1 align="center">Student Registration Form</h1>
     <table align="center" width="400px" border="0">
       <tr>
         <td>
           <fieldset>
             <form>
-              <h1>New here!! Sign in</h1>
               <label>Name :</label>
-              <input type="text" name="name" required /><br /><br />
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Linto"
+              /><br /><br />
               <label>Email :</label>
-              <input type="email" name="email" required /><br /><br />
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              /><br /><br />
               <label>Password :</label>
               <input type="password" name="password" required /><br /><br />
               <label>DOB :</label>
@@ -26,6 +36,8 @@
                 minlength="1"
                 pattern="[0-9]{1,10}"
               /><br /><br />
+              <label>Address :</label>
+              <textarea rows="4" cols="21"></textarea><br /><br />
               <label>Gender :</label>
               <input
                 type="radio"
@@ -52,7 +64,7 @@
                 <option value="" selected>Select one</option>
                 <option value="mca">MCA</option>
                 <option value="bca">BCA</option>
-                <option value="max_malayalam">MA MALAYALAM</option>
+                <option value="ma_malayalam">MA MALAYALAM</option>
                 <option value="mba">MBA</option></select
               ><br /><br />
 
@@ -64,10 +76,11 @@
               <input type="checkbox" name="hobbies" value="singing" />
               Singing<br />
               <input type="checkbox" name="hobbies" value="gaming" />
-              Gaming<br />
+              Gaming<br /><br />
               <center>
-              <button type="submit">Submit</button>
-              </center>         
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+              </center>
             </form>
           </fieldset>
         </td>
